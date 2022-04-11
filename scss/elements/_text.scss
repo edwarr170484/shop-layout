@@ -1,0 +1,37 @@
+.icon-text{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    &__icon{
+        display: block;
+        margin-right: 1rem;
+    }
+
+    &__text{
+        display: flex;
+        align-items: center;
+
+        & i{
+            margin-left: 0.5rem;
+            transition: all 0.5s;
+        }
+    }
+
+    &_red-text{
+        color: #9b0a0a;
+    }
+
+    &_bold-text{
+        font-weight: 700 !important;
+    }
+    &_semibold-text{
+        font-weight: 600 !important;
+    }
+
+    &_no-hover{
+        &:hover{
+            color: inherit !important;
+        }
+    }
+}

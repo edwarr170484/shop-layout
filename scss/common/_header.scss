@@ -1,0 +1,114 @@
+.header{
+    &__row{
+        &_border-b{
+            border-bottom: 1px solid #f0f0f0;
+        }
+    }
+
+    &__contacts{
+        display: flex;
+        align-items: center;
+        padding: 0.9rem 0;
+    }
+
+    &__location{
+        font-size: 1.1rem;
+        line-height: 2.4rem;
+        display: flex;
+
+        & .icon-text{
+            padding-right: 5rem;
+            font-weight: 600;
+    
+            &:last-child{
+                padding-right: 0;
+            }
+        }
+    }
+
+    &__calls{
+        margin-left: auto;
+        font-size: 1.3rem;
+        line-height: 2.4rem;   
+        display: flex;
+        align-items: center;
+    }
+
+    &__call{
+        position: relative;
+        padding-right: 3rem;
+        display: flex;
+        align-items: center;
+
+        & i{
+            margin-left: 0.5rem;
+            transition: all 0.5s;
+        }
+
+        & a{
+            &:hover, &:focus{
+                color:#9b0a0a; 
+                transition: all 0.7s;
+            }
+        }
+
+        &:last-child{
+            padding-right: 0;
+        }
+
+        &:hover {
+            & > .header__phones{
+                opacity: 1;
+                transform: translateY(0);
+                transition: all 0.5s;
+                z-index: 9;
+            }
+
+            & i.fa-caret-down{
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__phones{
+        position: absolute;
+        top: 100%;
+        right:2rem;
+        background: #fff;
+        padding: 0 1rem;
+        -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transform: translateY(-25px);
+        z-index: -9;
+
+        & .header__phone{
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e8e8e8;
+            display: flex;
+            flex-wrap:wrap;
+
+            &:last-child{
+                border-bottom: 0;
+            }
+        }
+    }
+
+    &__messengers{
+        display: flex;
+    }
+
+    &__messenger{
+        width: 28px;
+        height: 28px;
+        margin-left: 3px;
+    }
+
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap:wrap;
+        padding-top: 0.8rem;
+    }
+}

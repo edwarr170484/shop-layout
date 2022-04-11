@@ -1,0 +1,23 @@
+$maxWidth: 1280;
+
+@import "mixins";
+@import "reset";
+@import "grid";
+@import "common/header";
+@import "common/logotype";
+@import "common/menu";
+@import "elements/text";
+@import "controls/form";
+@import "controls/input";
+@import "controls/button";
+
+html, body{
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-size: 10px;
+}
+
+.content{
+    height: 100px;
+    background: #000;
+}

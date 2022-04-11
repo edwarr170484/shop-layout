@@ -1,0 +1,18 @@
+.logotype{
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    color: #999;
+    display: flex;
+    align-items: center;
+    max-width: 350px;
+
+    & svg{
+        margin-right: 1rem;
+        flex: 0 0 auto;
+        max-width: 17rem;
+    }
+
+    &:hover, &:focus{
+        color: #999;
+    }
+}

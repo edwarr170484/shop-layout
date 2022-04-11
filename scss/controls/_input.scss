@@ -1,0 +1,8 @@
+.input{
+    border-radius: 0;
+    border: none;
+
+    &:focus{
+        outline:none;
+    }
+}
