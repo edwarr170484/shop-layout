@@ -15,6 +15,7 @@
         font-size: 1.1rem;
         line-height: 2.4rem;
         display: flex;
+        flex-wrap:wrap;
 
         & .icon-text{
             padding-right: 5rem;
@@ -32,6 +33,10 @@
         line-height: 2.4rem;   
         display: flex;
         align-items: center;
+
+        @media(max-width: 1140px){
+            flex: 0 0 auto;
+        }
     }
 
     &__call{
@@ -67,6 +72,11 @@
             & i.fa-caret-down{
                 transform: rotate(180deg);
             }
+        }
+
+        @media(max-width: 1140px){
+            padding-right: 2rem;
+            flex: 0 0 auto;
         }
     }
 
@@ -108,7 +118,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-wrap:wrap;
         padding-top: 0.8rem;
     }
 }

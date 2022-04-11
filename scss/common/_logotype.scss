@@ -15,4 +15,10 @@
     &:hover, &:focus{
         color: #999;
     }
+
+    & span{
+        @media(max-width: 1140px){
+            display: none;
+        }
+    }
 }
