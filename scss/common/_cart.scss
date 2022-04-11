@@ -1,0 +1,41 @@
+.cart{
+    &_mobile{
+        display: none;
+        padding-bottom: 1rem;
+        
+        @media(max-width: 639px){
+            display: flex;
+            gap: 1rem;
+        }
+    }
+
+    &__button{
+        font-size: 2rem;
+        line-height: 2.4rem;
+        color: #111;
+        background: #f0f0f0 !important;
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    &__counter{
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: unset;
+        width: 1.6rem;
+        height: 1.6rem;
+        background:#9b0a0a;
+        color: #fff;
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        text-align: center;
+        font-weight: bold;
+    }
+}

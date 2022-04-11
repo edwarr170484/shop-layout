@@ -20,5 +20,14 @@
         @media(max-width: 1140px){
             display: none;
         }
+        @media(max-width:992px){
+            display: block;
+        }
+    }
+
+    @media(max-width: 639px){
+        display: block;
+        text-align: center;
+        padding-bottom: 2rem;
     }
 }

@@ -1,6 +1,6 @@
 .icon-text{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: start;
 
     &__icon{
@@ -9,9 +9,6 @@
     }
 
     &__text{
-        display: flex;
-        align-items: center;
-
         & i{
             margin-left: 0.5rem;
             transition: all 0.5s;

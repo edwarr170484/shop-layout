@@ -83,7 +83,6 @@
                                     </div>
                                 </div>
                             </div>
-                            
                         </div>
                         <div class="header__call">
                             <a class="icon-text icon-text_red-text icon-text_semibold-text" href="#">
@@ -107,6 +106,23 @@
                         <img src="img/logotype.svg" alt="" title="" />
                         <span>Готовый интернет-магазин на современной платформе</span>
                     </a>
+                    <div class="cart cart_mobile">
+                        <button class="cart__button button">
+                            <i class="cart__icon fa fa-sliders" aria-hidden="true"></i>
+                            <span class="cart__counter">0</span>
+                        </button>
+                        <button class="cart__button button">
+                            <i class="fa fa-star-o "></i>
+                            <span class="cart__counter">0</span>
+                        </button>
+                        <button class="cart__button button">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span class="cart__counter">0</span>
+                        </button>
+                    </div>
+                    <button class="button header__mobile-toggler">
+                        <i class="fa fa-bars"></i>
+                    </button>
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__item"><a href="" class="menu__link">Главная</a></li>
@@ -119,20 +135,19 @@
                                     <i class="fa fa-caret-down" aria-hidden="true"></i>
                                 </a>
                                 <ul class="menu__sublist">
-                                    <li class="menu__item"><a href="" class="menu__link">О компании</a></li>
-                                    <li class="menu__item"><a href="" class="menu__link">Доставка и оплата</a></li>
-                                    <li class="menu__item"><a href="" class="menu__link">Политика конфиденциальности</a></li>
-                                    <li class="menu__item"><a href="" class="menu__link">Обработка персональных данных</a></li>
+                                    <li class="menu__subitem"><a href="" class="menu__sublink">О компании</a></li>
+                                    <li class="menu__subitem"><a href="" class="menu__sublink">Доставка и оплата</a></li>
+                                    <li class="menu__subitem"><a href="" class="menu__sublink">Политика конфиденциальности</a></li>
+                                    <li class="menu__subitem"><a href="" class="menu__sublink">Обработка персональных данных</a></li>
                                 </ul>
                             </li>
                             <li class="menu__item"><a href="" class="menu__link">Отзывы</a></li>
                             <li class="menu__item">
                                 <a href="#" class="menu__link">
-                                    Еще
-                                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                                 </a>
                                 <ul class="menu__sublist">
-                                    <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+                                    <li class="menu__subitem"><a href="" class="menu__sublink">Контакты</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -141,6 +156,62 @@
                         <input type="text" name="search" class="input search-form__input"  placeholder="Поиск по сайту" autofocus="off" />
                         <button type="submit" class="button search-form__button"><i class="fa fa-search" aria-hidden="true"></i></button>
                     </form>
+                    <div class="header__phones header__phones_mobile">
+                        <div class="header__phone">
+                            <a class="icon-text icon-text_bold-text icon-text_no-hover" href="#">
+                                <span class="icon-text__text">
+                                    +375 (33) 123-45-67
+                                </span>
+                            </a>
+                            <div class="header__messengers">
+                                <a href="#" class="header__messenger">
+                                    <img src="img/viber.svg" alt="" title="" />
+                                </a>
+                                <a href="#" class="header__messenger">
+                                    <img src="img/whatsapp.svg" alt="" title="" />
+                                </a>
+                                <a href="#" class="header__messenger">
+                                    <img src="img/telegram.svg" alt="" title="" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header__phone">
+                            <a class="icon-text icon-text_bold-text icon-text_no-hover" href="#">
+                                <span class="icon-text__text">
+                                    +375 (29) 987-65-43
+                                </span>
+                            </a>
+                            <div class="header__messengers">
+                                <a href="#" class="header__messenger">
+                                    <img src="img/viber.svg" alt="" title="" />
+                                </a>
+                                <a href="#" class="header__messenger">
+                                    <img src="img/whatsapp.svg" alt="" title="" />
+                                </a>
+                                <a href="#" class="header__messenger">
+                                    <img src="img/telegram.svg" alt="" title="" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header__phone">
+                            <a class="icon-text icon-text_bold-text icon-text_no-hover" href="#">
+                                <span class="icon-text__text">
+                                    +375 (33) 000-00-00
+                                </span>
+                            </a>
+                            <div class="header__messengers">
+                                <a href="#" class="header__messenger">
+                                    <img src="img/viber.svg" alt="" title="" />
+                                </a>
+                                <a href="#" class="header__messenger">
+                                    <img src="img/whatsapp.svg" alt="" title="" />
+                                </a>
+                                <a href="#" class="header__messenger">
+                                    <img src="img/telegram.svg" alt="" title="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -148,5 +219,21 @@
     <div class="content">
         
     </div>
+    <script>
+        window.addEventListener('load', function(){
+            let menuButton = document.querySelector(".header__mobile-toggler");
+            let menu = document.querySelector(".menu");
+
+            menuButton.addEventListener('click', function(){
+                if(menu){
+                    if(menu.style.display == 'block'){
+                        menu.style.display = 'none';
+                    }else{
+                        menu.style.display = 'block';
+                    }
+                }    
+            });
+        });
+    </script>
 </body>
 </html>

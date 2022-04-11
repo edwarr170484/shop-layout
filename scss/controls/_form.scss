@@ -7,7 +7,8 @@
     &__input{
         background: #dfdfdf;
         padding: 1rem 0 1rem 1.2rem;
-        width:100%;
+        flex-grow: 1;
+
     }
 
     &__button{
@@ -15,5 +16,16 @@
         background: #dfdfdf !important;
         padding: 0 1rem !important;
         z-index: 3;
+    }
+
+    @media(max-width:992px){
+        order: 2;
+    }
+    @media(max-width: 639px){
+        width: 70%;
+        order: 5;
+    }
+    @media(max-width: 576px){
+        width: 100%;
     }
 }
